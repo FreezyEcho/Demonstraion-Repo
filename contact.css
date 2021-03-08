@@ -1,0 +1,35 @@
+
+
+#text1 {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400px;
+    margin-bottom: 40px;
+}
+
+#text2 {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+form input, button {
+    display: block;
+    margin: 30px;
+}
+#text1 {
+    display: flex;
+    justify-content: center;
+}
+.maindiv {
+    display: flex;
+    justify-content: center;
+
+}
+.textdiv {
+    max-width: 40%;
+    justify-content: center;
+}

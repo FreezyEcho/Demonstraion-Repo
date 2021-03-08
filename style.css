@@ -1,0 +1,271 @@
+nav {
+    background-color: rgb(189, 216, 145);
+    text-align: center;    
+
+    
+}
+
+a {
+    text-decoration-line: none;
+}
+nav ul {
+    list-style: none;
+    background-color: darkorchid;
+
+}
+nav li {
+    display: inline-block;
+
+
+    padding: 5px;
+}
+.nav-wrapper {
+    background-color: darkorchid;
+}
+#judo {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 200px;
+    font-style: initial;
+    text-align: center;
+}
+
+.Box {
+    background-color: blue;
+    
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        color: rgb(12, 216, 104);
+        opacity: 0.8;
+    }
+    60% {
+        opacity: 0.5;
+    }
+    80% {
+        color: rgb(148, 164, 219);
+        opacity: 0.3;
+    }
+    100% {
+        color: rgb(219, 56, 56);
+        opacity: 0;
+    }
+}
+#box1 {
+    animation-name: animate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(72deg);
+    }
+    25% {
+        transform: rotate(144deg);
+    }
+    50% {
+        transform: rotate(216deg);
+    }
+    75% {
+        transform: rotate(288deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    0% {
+        background-color: brown;
+    }
+    25% {
+        background-color: darkgoldenrod;
+    }
+    50% {
+        background-color: darkseagreen;
+    }
+    75% {
+        background-color: skyblue;
+    }
+    100% {
+        background-color: teal;
+    }
+}
+#box2 {
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    background-image: radial-gradient(circle);
+    border-radius: 25%;
+}
+@keyframes rot {
+    0% {
+        transform: rotate3d(2,3,0, 90deg);
+    }
+    50% {
+        transform: rotate3d(3, 5, 1, 180deg);
+    }
+    100% {
+        transform: rotate3d(4, 6, 0.5, 360deg);
+    }
+}
+#box3 {
+    animation-name: rot;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    /* animation-play-state: running; */
+    background-blend-mode: saturation;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background-image: linear-gradient(circle, green, silver, darkred, beige);
+}
+
+@keyframes scaling{
+    0% {
+        transform: scale(0);
+    }    
+    33% {
+        transform: scale(0.7);
+    }
+    66% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+#box4 {
+    animation: scaling 5s infinite ;
+    border-radius: 45%;
+    background-image: repeating-linear-gradient(circle, crimson, yellow, orange, darkblue);
+}
+
+@keyframes movee {
+    0% {
+        left: 0px; top: 0px;
+    }
+    25% {
+        left: 50px; top: 0px;
+    }
+    50% {
+        left: 0px; top: 100px;
+    }
+    75% {
+        left: 100px; top: 0px;
+    }
+    100% {
+        left: 0px; top: 200px;
+    }
+}
+#box5 {
+    animation: movee 5s infinite;
+    position: relative;
+}
+
+html {
+    background-image: url(Hex.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    /* background-image: linear-gradient(145deg, blue, green, purple); */
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+.row {
+    margin: 30px;
+}
+.input-field {
+    margin: 20px;
+}
+.btn {
+    background-color: deepskyblue;
+    color: deepskyblue;
+}
+
+.bod {
+    margin: 40px;
+}
+.wrapper {
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(5, [col] 19%);
+    grid-template-rows: repeat(3, [row] auto);
+    background-color: rgb(255, 255, 255);
+    color:#444;
+}
+.box {
+    background-color: rgb(255, 255, 255);
+    color: honeydew;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 150%;
+    z-index: 10;
+}
+
+.a {
+    grid-column: col / span 2;
+    grid-row: row;
+    display: flex;
+    justify-content: center;
+}
+.b {
+    grid-column: col 4 / span 2;
+    grid-row: row;
+    display: flex;
+    justify-content: center;
+}
+.c {
+    grid-column: col / span 5;
+    grid-row: row 2;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(pink, yellow, purple, ivory);
+}
+.d {
+    grid-column: col  / span 3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+.e {
+    grid-column: col 3 / span 3;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+.f {
+    grid-column: col 2 / span 3;
+    grid-row: row 2;
+    background-color: lightblue;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(39, 43, 102), azure, rgb(62, 122, 161) );
+}
